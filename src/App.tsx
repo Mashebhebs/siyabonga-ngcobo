@@ -171,6 +171,29 @@ const HeroSection = () => (
   </section>
 );
 
+const AboutSection = () => (
+  <section id="about" className="py-20 border-t border-white/10">
+    <div className="grid gap-12 md:grid-cols-3">
+      <div>
+        <h2 className="text-3xl font-bold text-white">About Me</h2>
+        <p className="mt-2 text-[#06B6D4] font-medium">Bridging rigorous engineering and STEM education.</p>
+      </div>
+      
+      <div className="md:col-span-2 space-y-4 text-[#94A3B8] leading-relaxed">
+        <p>
+          I'm a Data Engineer currently building robust, event-driven data platforms at Old Mutual for the Department of Home Affairs (DHA) initiative. My day-to-day focus centers on writing clean PySpark logic, orchestrating reliable workflows with Airflow, and enforcing schema integrity and traceability across Apache Iceberg layers.
+        </p>
+        <p>
+          My foundation spans formal studies in Computer Science and Mathematics at North West University, software engineering training through WeThinkCode_, and hands-on cloud certifications (AWS Certified Cloud Practitioner). 
+        </p>
+        <p>
+          Outside of enterprise data engineering, I run online tutoring services and share educational content on TikTok to make Mathematics and Physical Science more accessible to students. Whether I'm optimizing backend data ingestion or breaking down complex STEM concepts, I am driven by a commitment to problem-solving and clarity.
+        </p>
+      </div>
+    </div>
+  </section>
+);
+
 const ExperienceSection = () => (
   <section id="experience" className="py-20">
     <div className="mb-12">
@@ -239,7 +262,7 @@ const Footer = () => (
       <a href="https://www.linkedin.com/in/siyabonga-ngcobo-90a518257/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-[#0F172A] px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/5">
          LinkedIn
       </a>
-      <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-[#0F172A] px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/5">
+      <a href="https://github.com/mashebhebs" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-[#0F172A] px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/5">
          GitHub
       </a>
     </div>
