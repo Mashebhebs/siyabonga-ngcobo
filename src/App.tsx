@@ -158,7 +158,6 @@ const HeroSection = () => (
         <a href="#experience" className="inline-flex items-center gap-2 rounded-xl bg-[#2563EB] px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-600">
           View Enterprise Experience <ArrowRight className="h-4 w-4" />
         </a>
-        {/* Updated CV Link */}
         <a href="/Siyabonga_Ngcobo_Resume.pdf" download className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
           <Download className="h-4 w-4" /> Download CV
         </a>
@@ -276,10 +275,16 @@ export default function App() {
       <main className="mx-auto max-w-6xl px-6">
         <header className="flex items-center justify-between py-6">
           <div className="text-xl font-black tracking-tighter text-white">SN.</div>
-          <a href="mailto:siya18ngcobo@gmail.com" className="text-sm font-medium text-[#94A3B8] hover:text-white transition">Contact</a>
+          <div className="flex items-center gap-6">
+            <a href="#about" className="text-sm font-medium text-[#94A3B8] hover:text-white transition">About</a>
+            <a href="#experience" className="text-sm font-medium text-[#94A3B8] hover:text-white transition">Experience</a>
+            <a href="#skills" className="text-sm font-medium text-[#94A3B8] hover:text-white transition">Skills</a>
+            <a href="mailto:siya18ngcobo@gmail.com" className="text-sm font-medium text-[#94A3B8] hover:text-white transition">Contact</a>
+          </div>
         </header>
         
         <HeroSection />
+        <AboutSection />
         <ExperienceSection />
         <SkillsSection />
         <Footer />
